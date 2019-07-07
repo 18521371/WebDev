@@ -1,0 +1,1 @@
+- Task 1.2: design a CV for myself
