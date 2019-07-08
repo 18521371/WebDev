@@ -1,0 +1,145 @@
+
+body
+{
+    background-color: rgb(185, 185, 185);
+    margin-left: 20%;
+    width: 50cm;
+    height: 50cm;
+    margin-top: 0;
+}
+
+.Left
+{
+    background-color:rgb(255, 166, 0);
+    border-style: 2px solid black;
+    width: 10cm;
+    height: 35cm;
+    float: left;
+}
+
+.Right
+{
+    border-style: 2px solid black;
+    background-color: white;
+    width: 20cm;
+    height: 35cm;
+    float: left;
+}
+
+#address
+{
+    padding-left: 0.5cm;
+    padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+#aboutme
+{
+    padding: 0cm 0.5cm 0.5cm 0.5cm;
+    height: 4cm;
+}
+
+h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+#skill
+{
+    padding: 0cm 0.5cm 0.5cm;
+}
+
+#workskill
+{
+    padding: 0cm 0.5cm 0.5cm;
+}
+#education
+{
+    height: 6cm;
+    width: 20cm;
+    margin-left: 1cm;
+}
+
+#workexp
+{
+    height: 10cm;
+    width: 20cm;
+    margin-left: 1cm;
+}
+#achievement
+{
+    height: 10cm;
+    width: 15cm;
+    margin-left: 1cm;
+}
+
+#icon
+{
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+}
+
+.Left p
+{
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.Right p
+{
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(41, 41, 95);
+}
+
+h1
+{
+    color: rgb(41, 41, 95);
+}
+
+input[type="range"]
+{
+    width: 100%;
+    height: 15px;
+}
+
+ul li
+{
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    line-height: 1cm;
+}
+
+#profile
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+    background-color:rgb(219, 144, 3);
+    padding-bottom: 0.5cm;
+    margin-left: auto;
+    margin-right: auto;
+    width: 392px;
+    height: 341px
+}
+
+#image
+{
+    width: 300px;
+    height: 286px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
