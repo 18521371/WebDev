@@ -1,0 +1,10 @@
+.body1
+{
+  background-image: url("../image/background-floue.png"); 
+  background-repeat: inherit;
+}
+
+code
+{
+  background-color: white;
+}

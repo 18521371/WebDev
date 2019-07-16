@@ -1,0 +1,68 @@
+.phone
+{
+  height: 618px;
+  width: 454px;
+  margin-top: 140px;
+}
+
+.chu
+{
+  width: 175px;
+  height: 51px;;
+  margin-left: 70px;
+}
+.form
+{
+  margin-top: 63px;
+  
+}
+
+.belowchu
+{
+  text-align: center;
+  font-size: 16px;
+  color: gray;
+  width: 279px;
+  margin-left: 30px
+}
+.facebook
+{
+  margin-left: 30px;
+  width: 286px;
+}
+
+.my
+{
+  margin-left: 29px;
+  width: 284px;
+}
+
+.Signup
+{
+  width: 300px;
+  height: 45px;
+  margin-left: 30px;
+}
+.dieukhoan
+{
+  text-align: center;
+  width: 287px;
+  margin-left: 30px;
+}
+.myform
+{
+  border: 1px solid #e6e6e6;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #fff;
+  padding-right: 10px;
+}
+.myform2
+{
+  border: 1px solid #e6e6e6;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  background-color: #fff;
+  padding-right: 10px;
+}

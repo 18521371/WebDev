@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-css/style.css"> 
+    <link rel="stylesheet" href="bootstrap-css/Fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-css/css/bootstrap.min.css">
+    <title>TASK 1.1</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"  role="tablist" aria-orientation="vertical" >
+        <a class="navbar-brand" href="#">18521371 - Phạm Ngọc Tâm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <form class="form-inline my-2 my-lg-0" style="height: 38px; width:550px;">
+            
+            <input class="form-control mr-sm-2"  style="width: 100%;" type="search" placeholder="Search" aria-label="Search">
+              </div>
+            </form>
+            <button class="btn btn-success my-2 my-sm-0"  data-target="#modalsignout" data-toggle="modal"  type="button">Sign out</button>
+            <div class="modal fade" id="modalsignout" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Sign out</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Are you sure to want to sign out?</p> 
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-success">Sign out</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <a class="nav-link btn btn-light my-2 my-sm-0 ml-2" data-toggle="pill" href="#q1" role="tab" > Câu 1 </a>
+            <a class="nav-link btn btn-light my-2 my-sm-0 ml-2" data-toggle="pill" href="#q2" role="tab" > Câu 2 </a>
+            <a class="nav-link btn btn-light my-2 my-sm-0 ml-2" href="#q3" data-toggle="pill" role="tab" > Câu 3 </a>
+            <a class="nav-link btn btn-light my-2 my-sm-0 ml-2" href="#q4" data-toggle="pill" role="tab" > Câu 4 </a>
+              
+      </nav>
+
+      <div class="container-fluid " >
+              <div class="row">
+                  <div class="col-md-2">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <a class="nav-link active mb-4" id="v-pills-home-tab" data-toggle="pill" href="#q1" role="tab" aria-controls="v-pills-home" aria-selected="true"> Question 1</a>
+                      <a class="nav-link mb-4" id="v-pills-profile-tab" data-toggle="pill" href="#q2" role="tab" aria-controls="v-pills-profile" aria-selected="false"> Question 2 </a>
+                      <a class="nav-link mb-4" id="v-pills-messages-tab" data-toggle="pill" href="#q3" role="tab" aria-controls="v-pills-messages" aria-selected="false"> Question 3</a>
+                      <a class="nav-link mb-4" id="v-pills-settings-tab" data-toggle="pill" href="#q4" role="tab" aria-controls="v-pills-settings" aria-selected="false"> Question 4</a>
+                    </div>
+                  </div>
+                  <div class="col-md-10 body1" id="content1">
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="q1" role="tabpanel" >
+                        <h3> Question 1</h3>
+                        <p> <h4 style="color:red;">Trình bày các cách để tích hợp Bootstrap vào một trang HTML/CSS bình thường trong
+                            điều kiện đang có kết nối Internet? Trong Bootstrap đã được biên dịch gồm có những gì?</h4>
+                            <br>
+                            <h5>Có 2 cách để tích hợp Bootstrap vào trong file html/css trong điều kiện có kết nối internet:</h5>
+                            <br>
+                            <strong>Cách 1:</strong>  <br>
+                            + Tải file bootstrap vào trong cùng folder với file html/css và khai báo đường
+                            link tại &lt;header&gt; của file html: <br>
+                            <code class="bg-white">
+                                &lt;header&gt; <br>
+                                ... <br>
+                                &lt;link rel="stylesheet" href="Name-file-boostrap/css/bootstrap.min.css"&gt; <br>
+                                ... <br>
+                                &lt;/header&gt; <br>
+                              </code>
+                              <strong>Cách 2:</strong> <br>
+                            + Dẫn trực tiếp đường link của file bootstrap trên internet (tuy nhiên sẽ gây chậm trong điều 
+                            kiện tốc độ mạng kém): <br>
+                            <code class="bg-white">
+                                &lt;header&gt; <br>
+                                ... <br>
+                                &lt;link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+                                &gt; <br>
+
+                                ... <br>
+                                &lt;/header&gt; <br>
+                              </code>
+                              <h5>Trong Bootstrap đã được biên dịch gồm:</h5>
+                              <pre>
+                                  bootstrap/
+                                  ├── css/
+                                  │   ├── bootstrap.css
+                                  │   ├── bootstrap.min.css
+                                  │   ├── bootstrap-theme.css
+                                  │   └── bootstrap-theme.min.css
+                                  ├── js/
+                                  │   ├── bootstrap.js
+                                  │   └── bootstrap.min.js
+                                  └── fonts/
+                                      ├── glyphicons-halflings-regular.eot
+                                      ├── glyphicons-halflings-regular.svg
+                                      ├── glyphicons-halflings-regular.ttf
+                                      └── glyphicons-halflings-regular.woff
+                              </pre>
+                              
+                          </p>
+                      </div>
+                      <div class="tab-pane fade" id="q2" role="tabpanel" >
+                          <h3> Question 2</h3>
+                          <h4 style="color:red">Responsive là gì? Làm thế nào nếu muốn vô hiệu hóa tính năng Responsive khi đang sử
+                              dụng Bootstrap?</h4>
+                            <h5> Responsive là gì? </h5>
+                            <p>
+                              Hiểu một cách đơn giản Web Responsive là phong cách thiết kế website làm sao cho phù hợp trên tất cả các thiết bị, mọi độ phân giải màn hình. Một website đẹp trên máy tính nhưng khi xem trên điện thoại bố cục lộn xộn, hình ảnh, bài viết không cân đối thì không thể gọi là Web Responsive
+                              <br>
+                              <strong><i>Ví dụ về Web Responsive: </i></strong> <br>
+                              Bạn mở trang chủ website Responsive, rồi thu nhỏ trình duyệt hoặc đổi độ phân giải màn hình, bạn sẽ thấy website của mình không hề xuất hiện Scrollbar ngang, mà nó sẽ tự động co dãn sao cho phù hợp với chiều rộng màn hình máy tính bạn.
+                              <br>
+                              <h5> Vô hiệu hóa tính năng Responsive: </h5>
+                              <ol style="list-style-type:decimal;">
+                                <li>
+                                  Hãy bỏ thẻ &lt;meta&gt; viewport đã được đề cập đến trong tài liệu CSS
+                                </li>
+                                <li>
+                                  Hãy ghi đè thuộc tính width trên .container đối với mỗi cột trong hệ thống lưới, ví dụ width: 970px !important; Hãy chắc chắn rằng, các mã CSS tùy biến này được tích hợp vào sau CSS mặc định của Bootstrap. Bạn cũng có thể tránh sử dụng !important bằng các media query hoặc một số selector-fu.
+                                </li>
+                                <li>
+                                  Nếu bạn sử dụng thanh điều hướng, hãy vô hiệu hóa toàn bộ các tính năng thu gọn và mở rộng trên thanh điều hướng đó.
+                                </li>
+                                <li>
+                                  Đối với các bố cục dạng lưới, hãy sử dụng class .col-xs-* bằng cách thêm vào hoặc thay thế cho các class medium/large. Đừng lo lắng, hệ thống lưới trên các thiết bị có màn hình siêu nhỏ sẽ tự động co giãn đối với mọi độ phân giải.
+                                </li>
+                              </ol>
+                            </p>
+                      </div>
+                      <div class="tab-pane fade" id="q3" role="tabpanel" >
+                          <h3> Question 3</h3>
+                          <h4 style="color:red">Tìm hiểu về hệ thống lưới (Grid System) của Bootstrap và so sánh hoạt động của hệ thống
+                            lưới này trên các thiết bị có kích thước màn hình khác nhau như Phones (&lt;768px), Tablet
+                            ( ≥768px), Desktop( ≥992px và ≥1200px).
+                            </h4>
+                            <br>
+                            <h5> So Sánh lưới Bootstrap so với mỗi thiết bị: </h5>
+                            <br>
+                            <div class="table-responsive">
+                              <table class="table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th></th>
+                                    <th>
+                                      Extra small devices
+                                      <small>Phones (&lt;768px)</small>
+                                    </th>
+                                    <th>
+                                      Small devices
+                                      <small>Tablets (≥768px)</small>
+                                    </th>
+                                    <th>
+                                      Medium devices
+                                      <small>Desktops (≥992px)</small>
+                                    </th>
+                                    <th>
+                                      Large devices
+                                      <small>Desktops (≥1200px)</small>
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th>Grid behavior</th>
+                                    <td>Horizontal at all times</td>
+                                    <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Container width</th>
+                                    <td>None (auto)</td>
+                                    <td>750px</td>
+                                    <td>970px</td>
+                                    <td>1170px</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Class prefix</th>
+                                    <td><code>.col-xs-</code></td>
+                                    <td><code>.col-sm-</code></td>
+                                    <td><code>.col-md-</code></td>
+                                    <td><code>.col-lg-</code></td>
+                                  </tr>
+                                  <tr>
+                                    <th># of columns</th>
+                                    <td colspan="4">12</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Column width</th>
+                                    <td class="text-muted">Auto</td>
+                                    <td>~62px</td>
+                                    <td>~81px</td>
+                                    <td>~97px</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Gutter width</th>
+                                    <td colspan="4">30px (15px on each side of a column)</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Nestable</th>
+                                    <td colspan="4">Yes</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Offsets</th>
+                                    <td colspan="4">Yes</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Column ordering</th>
+                                    <td colspan="4">Yes</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                      </div>
+                      <div class="tab-pane fade" id="q4" role="tabpanel" >
+                          <h3> Question 4</h3>
+                          <h4 style="color:red">
+                            Tìm và cho ví dụ về cách để thực hiện các yêu cầu sau: <br>
+                            + Chèn 1 button 1 biểu tượng trong Button đó. <br>
+                            + Chèn 1 thanh Progress bar (tiến trình) tương tự trong CV ở Task 1.2. <br>
+                            + Chèn các loại cảnh báo (Alert) trong trang như Succes, Info, Danger, Warning. <br>
+                            + Chèn 1 menu (Navigation) trong đó có 1 mục có menu con xổ xuống. <br>
+                          </h4>
+                          <br>
+                          <br>
+
+                          <i><h5 style="color: blue">Chèn 1 button 1 biểu tượng trong Button đó:</h5></i>
+                          <p>
+                              Đây là ví dụ một button có biểu tượng ngôi sao trong github: <br>
+                              <img src="../Task 1.1/image/github.png" alt="example">
+                              <br>
+                              <strong>Cách thực hiện:</strong>  <br>
+                              <br>
+                              - <strong>Bước 1:</strong>  Tạo button với bootstrap<br>
+                              <code>
+                                  &lt;button class="btn btn-outline-primary">&lt;/button&gt; <br>
+                              </code>
+                              <br>
+                              -<strong>Bước 2:</strong> Dùng Fontawesome để vào 1 icon trong button <br>
+                              <code>
+                                  &lt;button class="btn btn-outline-primary">
+                                      &lt;i class="fas fa-star">&lt;/i> Star
+                                  &lt;/button>
+                              </code> <br>
+                              - <strong>Kết quả</strong> <br>
+                              <button class="btn btn-outline-primary">
+                                  <i class="fas fa-star "></i> Star
+                              </button>
+                          </p>
+                          <i><h5 style="color: blue">Chèn 1 thanh Progress bar (tiến trình) tương tự trong CV ở Task 1.2:</h5></i>
+                          <p>
+
+                              <strong> Cách thực hiện: </strong>
+                              <br>
+                              <code>
+                                  &lt;div class="progress"> <br>
+                                      &lt;div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%&lt;/div>
+                                    <br>
+                                      &lt;/div>
+                              </code>
+                              - <strong>Kết quả</strong> <br>
+                              <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                              </div>
+                          </p>
+                          <i><h5 style="color: blue">Chèn các loại cảnh báo (Alert) trong trang như Success, Info, Danger, Warning:</h5></i>
+                          <p>
+
+                            <strong> Cách thực hiện: </strong> <br>
+                            <code>
+                                &lt;div class="alert alert-warning">Đây là cảnh báo nguy hiểm&lt;/div>
+                            </code> <br>
+                            <br>
+                            Ngoài ra còn một số loại alert khác: <br>
+                            + <strong>warning</strong> : cảnh báo <br>
+                            +  <strong>primary</strong> : thông thường <br>
+                            + <strong>secondary</strong> : thông báo thứ cấp <br>
+                            + <strong>success</strong> : thông báo thành công <br>
+                            + <strong> danger</strong>: thông báo nguy hiểm <br>
+                            - <strong>Kết quả</strong> <br>
+                            <div class="alert alert-primary" role="alert">
+                                A simple primary alert—check it out!
+                              </div>
+                              <div class="alert alert-secondary" role="alert">
+                                A simple secondary alert—check it out!
+                              </div>
+                              <div class="alert alert-success" role="alert">
+                                A simple success alert—check it out!
+                              </div>
+                              <div class="alert alert-danger" role="alert">
+                                A simple danger alert—check it out!
+                              </div>
+                              <div class="alert alert-warning" role="alert">
+                                A simple warning alert—check it out!
+                              </div>
+                              <div class="alert alert-info" role="alert">
+                                A simple info alert—check it out!
+                              </div>
+                              <div class="alert alert-light" role="alert">
+                                A simple light alert—check it out!
+                              </div>
+                              <div class="alert alert-dark" role="alert">
+                                A simple dark alert—check it out!
+                              </div>
+                          </p>
+                          <i><h5 style="color: blue">Chèn 1 menu (Navigation) trong đó có 1 mục có menu con xổ xuống:</h5></i>
+                          <br>
+                          <br>
+                          <ul class="nav nav-tabs">
+                              <li class="nav-item">
+                                <a class="nav-link active" href="#">Active</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                              </li>
+                            </ul>
+                            <br> 
+                            <br>
+                            <br>
+                          <strong> Cách thực hiện: </strong> <br>
+                          <code>
+                              &lt;ul class="nav nav-tabs"> <br>
+                              &lt;li class="nav-item"> <br>
+                              &lt;a class="nav-link active" href="#">Active&lt;/a> <br>
+                              &lt;/li> <br>
+                              &lt;li class="nav-item dropdown"> <br>
+                              &lt;a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown&lt;/a>
+                              <br>
+                              &lt;div class="dropdown-menu"> <br>
+                              &lt;a class="dropdown-item" href="#">Action&lt;/a> <br>
+                              &lt;a class="dropdown-item" href="#">Another action&lt;/a> <br>
+                              &lt;a class="dropdown-item" href="#">Something else her&lt;/a> <br>
+                              &lt;div class="dropdown-divider">&lt;/div> <br>
+                              &lt;a class="dropdown-item" href="#">Separated link&lt;/a> <br>
+                              &lt;/div> <br>
+                              &lt;/li> <br>
+                              &lt;li class="nav-item"> <br>
+                              &lt;a class="nav-link" href="#">Link&lt;/a> <br>
+                              &lt;/li> <br>
+                              &lt;li class="nav-item"> <br>
+                              &lt;a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled&lt;/a>
+                              <br>
+                              &lt;/li> <br>
+                              &lt;/ul> <br>
+                          </code>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap-css/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-css/js/bootstrap.js"></script>
+</body>
+</html>
