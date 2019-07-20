@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <title>TASK 3.2</title>
 </head>
-<body id="body" onload="LoadTime(); setThanhngu(); SetBackground();">
+<body id="body" onload="LoadTime(); setThanhngu(); SetBackground();loadlive()">
     
     <!-- Top trên -->
     <div class="container-fluid">
@@ -70,7 +70,7 @@
             
             <!-- Phần top dưới -->
             
-                    <div class="d-flex bd-highlight justify-content-between" style="margin-top: 7%;">
+                    <div class="d-flex bd-highlight justify-content-between shadow-sm" style="padding-top: 15%;">
                             <div > 
                                     <div style="color:white;"> 
                                             <button style="background-color: rgba(0,0,0,0); border:0;"type="button" data-toggle="modal" data-target="#form"><i class="fas fa-user-cog" style="color:white"></i> </button>  Settings
@@ -89,18 +89,14 @@
                                                         <div class="form-group">
                                                             <label for=""> Enter your Name: </label> <br>
                                                             <input type="text" class="form-control" id="formage0"  value="Ngọc Tâm" required>
-                                                            <label for=""> Enter your date: </label> <br>
-                                                            <input type="number" class="form-control" id="formage1"  value="24" required>
-                                                            <label for=""> Enter your month: </label> <br>
-                                                            <input type="number" class="form-control" id="formage2"  value="05" required>
-                                                            <label for=""> Enter your year: </label> <br>
-                                                            <input type="number" class="form-control" id="formage3"  value="2000" required>
+                                                            <label for=""> Enter your birth: </label> <br>
+                                                            <input type="date" class="form-control" id="formage3"  value="2000-05-24" required>
                                                         </div>
                                                       
                                                     </div>
                                                     <div class="modal-footer">
                                                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                      <button type="submit" class="btn btn-primary"   data-dismiss="modal" onclick="getTime()">Enter</button>
+                                                      <button type="submit" class="btn btn-primary"   data-dismiss="modal" onclick="loadlive()">Enter</button>
                                                     </div>
                                                   </div>
                                                 </div>
