@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="Fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <title>TASK 3.2</title>
+</head>
+<body id="body" onload="LoadTime(); setThanhngu(); SetBackground();">
+    
+    <!-- Top trên -->
+    <div class="container-fluid">
+            <div class="row">
+                    <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-7">
+                                        <div class="row">
+                                                <a href="" style="color:white;padding:8px;font-size: 120%;">Links</a>
+                                                <div class="input-group-prepend">
+                                                  <button class="btn btn-outline-secondary border-0" type="button" id="button-addon1"><i class="fas fa-search"  style="color:white" ></i></button>
+                                                </div>
+                                                <input type="text" style=" background-color: rgba(0, 0, 0,0);border:0;color:white" class="form-control w-25" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                        </div>
+                                            
+                                   
+                                </div>
+                                <div class="col-5">
+                                    <div class="d-flex flex-row-reverse topright">
+                                        <div class="p-2"> <h1> </h1></div>
+                                    </div> 
+                                </div>
+                               
+                            </div>
+                        </div>
+                    
+            </div>
+            
+            <!-- Phần thân -->
+            <div class="row" >
+                    <div class="container-fluid" id="center" >
+                            <div class="row">
+                                <div class="col-12 center">
+                                     <div id="time"   ></div>
+                                     <div class="justify-content-center message">
+                                        <h1> <span id="Buoi">  </span> <span id="Name"> Louiss</span></h1>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                                
+                        </div>
+            </div>
+            
+            <!-- Phần dưới thân -->
+            <div class="row">
+                    <div class="container-fluid" id="belowcenter">
+                            <div class="row">
+                                <div class="col-12 belowcenter">
+                                    <div id= "tuoi" style="color: white;font-size:135%; ">
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+            </div>
+            
+            <!-- Phần top dưới -->
+            
+                    <div class="d-flex bd-highlight justify-content-between" style="margin-top: 7%;">
+                            <div > 
+                                    <div style="color:white;"> 
+                                            <button style="background-color: rgba(0,0,0,0); border:0;"type="button" data-toggle="modal" data-target="#form"><i class="fas fa-user-cog" style="color:white"></i> </button>  Settings
+                                            <!-- MODAL -->
+                                            <div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" id="form">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalCenterTitle" style="color:black">Form</h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                    </div>
+                                                    <div class="modal-body" style="color:black">
+                                                      
+                                                        <div class="form-group">
+                                                            <label for=""> Enter your Name: </label> <br>
+                                                            <input type="text" class="form-control" id="formage0"  value="Ngọc Tâm" required>
+                                                            <label for=""> Enter your date: </label> <br>
+                                                            <input type="number" class="form-control" id="formage1"  value="24" required>
+                                                            <label for=""> Enter your month: </label> <br>
+                                                            <input type="number" class="form-control" id="formage2"  value="05" required>
+                                                            <label for=""> Enter your year: </label> <br>
+                                                            <input type="number" class="form-control" id="formage3"  value="2000" required>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                      <button type="submit" class="btn btn-primary"   data-dismiss="modal" onclick="getTime()">Enter</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                            </div>
+                            <div style="color: white;margin-right: 8%;font-size:135%; " id="Thanhngu">  </div>
+                            <div style="color: white"> </div>
+                    </div>
+            
+                
+    
+           
+                    
+    </div>
+    
+     
+    
+    <script src="JS/myScript.js"></script>
+    <script src="JS/jquery-3.4.1.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

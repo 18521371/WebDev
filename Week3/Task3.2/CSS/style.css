@@ -1,0 +1,69 @@
+body
+{
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#center
+{
+  margin-top: 8%;
+}
+.center
+{
+  color: white;
+  width: 100%;
+  text-align: center;
+  height: auto;
+  line-height: 166px;
+}
+
+#belowcenter
+{
+  margin-top: 4%;
+}
+.belowcenter
+{
+  color: white;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.topright
+{
+  text-align: right;
+  color: white
+}
+
+.topleft
+{
+  text-align: right;
+  color: white;
+}
+
+.bottomleft
+{
+  margin-bottom: 0;
+}
+
+#time
+{
+  font-size: 1000%;
+}
+
+#input
+{
+  display: inline-block;
+  width: 30%;
+  border-bottom: 2px solid white;
+  background-color: rgba(0, 0, 0,0);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  color: white;
+  text-align: center;
+  font-size: 120%;
+}

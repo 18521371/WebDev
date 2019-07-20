@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <title>TASK 1.1</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"  role="tablist" aria-orientation="vertical" >
+        <a class="navbar-brand" href="#">18521371 - Phạm Ngọc Tâm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <form class="form-inline my-2 my-lg-0" style="height: 38px; width:550px;">
+            
+            <input class="form-control mr-sm-2"  style="width: 100%;" type="search" placeholder="Search" aria-label="Search">
+              </div>
+            </form>
+            <button class="btn btn-success my-2 my-sm-0"  data-target="#modalsignout" data-toggle="modal"  type="button">Sign out</button>
+            <div class="modal fade" id="modalsignout" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Sign out</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Are you sure to want to sign out?</p> 
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-success">Sign out</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="nav nav-pills" role="tablist">
+            <a class="nav-link btn btn-light my-2 my-sm-0 ml-2" onclick=" document.getElementById('link1').style='active'" data-toggle="pill" href="#q1" role="tab" > Câu 1 </a>
+            <a class="nav-link btn btn-light my-2 my-sm-0 ml-2" data-toggle="pill" href="#q2" role="tab" > Câu 2 </a>
+            <a class="nav-link btn btn-light my-2 my-sm-0 ml-2" href="#q3" data-toggle="pill" role="tab" > Câu 3 </a>
+            <a class="nav-link btn btn-light my-2 my-sm-0 ml-2" href="#q4" data-toggle="pill" role="tab" > Câu 4 </a>
+          </div>
+      </nav>
+
+      <div class="container-fluid " >
+              <div class="row">
+                  <div class="col-md-2">
+                    <div class="nav flex-column nav-pills" role="tablist">
+                      <a class="nav-link active mb-4" id="link1"  data-toggle="pill" href="#q1" role="tab"  > Question 1</a>
+                      <a class="nav-link mb-4" data-toggle="pill" href="#q2" role="tab"> Question 2 </a>
+                      <a class="nav-link mb-4" data-toggle="pill" href="#q3" role="tab" > Question 3</a>
+                      <a class="nav-link mb-4"  data-toggle="pill" href="#q4" role="tab" > Question 4</a>
+                    </div>
+                  </div>
+                  <div class="col-md-10 body1" id="content1">
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="q1" role="tabpanel" >
+                        <h3> Question 1</h3>
+                        <p>
+                          <h4 style="color:red"> 
+                            Những vị trí nào có thể đặt Javascript trong file HTML và dặt theo cú pháp nào? Nên đặt
+                            Javascript tại vị trí nào để có hiệu suất tốt nhất? Cho ví dụ minh họa.
+                          </h4>
+                          <h5>
+                            Những vị trí có thể đặt Javascript trong file HTML: </h5> <br>
+                            <strong>Vị trí 1:</strong>  <br>
+                              + Đặt trong phần &lt;head> của file html <br>
+                              Cú pháp: <br>
+                            
+                                <code>
+                                  &lt;head> <br>
+                                    &lt;script> <br>
+                                    function myFunction() { <br>
+                                      document.getElementById("demo").innerHTML = "Paragraph changed."; <br>
+                                    } <br>
+                                    &lt;/script> <br>
+                                    &lt;/head> <br>
+                                </code>
+                            <strong> Vị trí 2: </strong> <br>
+                            + Đặt trong phần &lt;body> của file html: <br>
+                            Cú pháp: <br>
+                            <code>
+                              &lt;body>  <br>
+                                ... <br>
+                                &lt;script> <br>
+                                function myFunction() { <br>
+                                 document.getElementById("demo").innerHTML = "Paragraph changed."; <br>
+                                } <br>
+                                &lt;/script> <br>
+                                
+                                &lt;/body> <br>
+                            </code>
+                            
+                            <strong> Vị trí 3: </strong> <br>
+                            + Đặt ở trong file.js bên ngoài file html: <br>
+                            Cú pháp: <br>
+                            Tạo file myScript.js bên ngoài file html rồi dẫn vào theo cú pháp bên dưới:<br>
+                            <code>
+                                &lt;body> <br>
+                                  ... <br>
+
+
+                                  &lt;script src="myScript.js"> <br>
+
+                                  &lt;/script> <br>
+                                  &lt;/body> <br>
+                            </code>
+
+                            <h5>Nên đặt Javascript tại vị trí bên ngoài để có hiệu suất tốt nhất: </h5> <br>
+                            Bởi vì: <br>
+                            + Dễ phân biệt giữa html và javascript code <br>
+                            + Làm cho html và javascript dễ đọc và bảo trì <br>
+                            + Để file js bên ngoài có thể tăng tốc độ tải trang <br>
+                            
+                          </p>
+                      </div>
+                      <div class="tab-pane fade" id="q2" role="tabpanel" >
+                          <h3> Question 2</h3>
+                          <h4 style="color:red">Trong Javascript có những kiểu dữ liệu nào? Làm thế nào để tạo một biến để lưu trữ giá
+                              trị tương ứng với những kiểu dữ liệu đó?</h4>
+                            <h5> Trong Javascript có những kiểu dữ liệu: </h5>
+                            <p>
+                              + Kiểu dữ liệu số học <br>
+                              + Kiểu dữ liệu chuỗi (string) <br>
+                              + Kiểu dữ liệu boolean <br>
+                              + Kiểu dữ liệu mảng array <br>
+                              + Kiểu dữ liệu đối tượng object <br>
+                              + Kiểu dữ liệu undefined <br>
+
+                            <h5> Để tạo một biến để lưu trữ giá
+                                trị tương ứng với những kiểu dữ liệu trên: </h5>
+                              <strong> Ví dụ cụ thể: </strong> <br>
+                            <strong style="color:blue">Kiểu dữ liệu số học: </strong> <br>
+                            <code>
+                                &lt;script> <br>
+
+                                &emsp; var a = 22; <br>
+                                &emsp; var b = -1993; <br>
+                                &lt;/script> <br>
+                            </code>
+                            <strong style="color:blue">Kiểu dữ liệu string: </strong> <br>
+                            <code>
+                                &lt;script> <br>
+                                &emsp;var a = "Tài liệu học HTML"; <br>
+                                &emsp; var b = 'Lập Trình Web'; <br>
+                                    &lt;/script> <br>
+                            </code>
+                            <strong style="color:blue">Kiểu dữ liệu boolean: </strong> <br>
+                            <code>
+                                &lt;script> <br>
+                                &emsp;var a = true; <br>
+                                &emsp;  var b = false; <br>
+                                &emsp; var c = 6 > 2; <br>
+                                &emsp; var d = 6 > 10; <br>
+                                    &lt;/script> <br>
+                            </code>
+                            <strong style="color:blue">Kiểu dữ liệu undefined: </strong> <br>
+                            <code>
+                                &lt;script> <br>
+                                
+                                &emsp; var myName; //biến myName sẽ có giá trị là undefined và kiểu dữ liệu là undefined
+                                <br> 
+                                &lt;/script> <br>
+                                <br>
+                                <br>
+                                &lt;script> <br>
+                                &emsp; var myName = "Nguyễn Thành Nhân"; //biến myName có kiểu dữ liệu là string
+                                <br>
+                                &emsp; myName = undefined; //biến myName có kiểu dữ liệu là undefined
+                                <br>
+                                &lt;/script>
+                                <br>
+                            
+                            </code>
+                            <strong style="color:blue">Kiểu dữ liệu object: </strong> <br>
+                            <code>
+                                &lt;script> <br>
+                                &emsp;var SinhVien = { <br>
+                                  &emsp;&emsp;    name:"Nhân", <br>
+                                  &emsp;&emsp;   gender:"Nam", <br>
+                                  &emsp;&emsp;     year:1993 <br>
+                                    } <br>
+                                &lt;/script> <br>
+                            </code>
+                            <strong style="color:blue">Kiểu dữ liệu array: </strong> <br>
+                            <code>
+                                &lt;script> <br>
+                                &emsp;&emsp; var mobile = ["HTC","Nokia","SamSung"]; <br>
+                                &lt;/script> <br>
+                            </code>
+                            </p>
+                      </div>
+                      <div class="tab-pane fade" id="q3" role="tabpanel" >
+                          <h3> Question 3</h3>
+                          <h4 style="color:red">Làm thế nào để truy xuất (lấy giá trị) trong 1 thẻ HTML bất kỳ và gán vào 1 biến để trong
+                              Javascript theo ID, theo Class, theo Name, theo tên thẻ HTML và theo CSS Selector (ví dụ
+                              .class, #id)? Cho ví dụ minh họa.
+                            </h4>
+                            <strong style="color:blue">Theo ID: </strong> <br>
+                            ví dụ: <br>
+                            <code>
+                                var element = document.getElementById('idname');
+                            </code>
+                            <br>
+                            <strong style="color:blue">Theo Class: </strong> <br>
+                            <code>
+                                var element = document.getElementByClassName('ClassName');
+                            </code>
+                            <br>
+                            <strong style="color:blue">Theo thẻ html: </strong> <br>
+                            <code>
+                                var element = document.getElementByTagName('ClassName'); 
+                            </code>
+                            <br>
+                            <strong style="color:blue">Theo CSS selector : </strong> <br>
+                            <code>
+                                var element = document.querySelectorAll("selector.css");
+                            </code>
+                            <br>
+                      </div>
+                      <div class="tab-pane fade" id="q4" role="tabpanel" >
+                          <h3> Question 4</h3>
+                          <h4 style="color:red">
+                              Xác định các lệnh Javascript tương ứng để thực hiện các yêu cầu sau: <br>
+                              + Viết ghi chú trong Javascript (1 dòng, nhiều dòng)  <br>
+                              + Hiển thị thời gian hiện tại (từ năm đến giây theo múi giờ GMT+7 - Việt Nam). <br>
+                              + Viết 1 hàm (function) để tính tổng giá trị của 2 số ngẫu nhiên từ 1 đến 100. <br>
+                              + Đổi màu nền hay hình nền của trang. <br>
+                          </h4>
+                          <br>
+                          <strong style="color:blue">Viết ghi chú trong JS:  </strong> <br>
+                          + <strong>1 dòng: </strong> <code> //This is comment in JS</code> <br>
+                          + <strong>Nhiều dòng: </strong> <code> /*This is comment in JS */</code> <br>
+                          <strong style="color:blue">Hiển thị thời gian hiện tại trong JS:  </strong> <br>
+                          <p id="demo"></p>
+                          <button class="btn btn-primary" onclick="ShowTime()">Show Time</button>
+                          <br>
+
+                          <code>
+                              function ShowTime() { <br>
+                              d = new Date(); <br>
+                              document.getElementById("demo").innerHTML = d; <br>
+                              } <br>
+                          </code>
+                          <strong style="color:blue">Viết 1 hàm (function) để tính tổng giá trị của 2 số ngẫu nhiên từ 1 đến 100:  </strong> <br>
+                          <p id="sum"></p>
+                          <button class="btn btn-primary" onclick="SumRandom()">Sum a and b random</button> <br>
+                          
+                          <code>
+                            function SumRandom() <br>
+                            { <br>
+                              var a = Math.floor(Math.random() * 100) + 1; <br>
+                              var b = Math.floor(Math.random() * 100) + 1; <br>
+                              document.getElementById("sum").innerHTML = "a =" + a + "b =" + b + " a + b =" + (a+b);
+                            } <br>
+                          </code>
+                          <strong style="color:blue"> Đổi màu nền hay hình nền của trang:  </strong> <br>
+                          
+                          <div style ="width:300px; height:300px; background-color: blue" id="bg"></div>
+                          
+                          <br>
+                          <button class="btn btn-primary" onclick="ChangeBG()">Change Background</button>
+                        </div>
+        </div>
+    
+    <script src="JS/myScript.js"></script>
+    <script src="JS/jquery-3.4.1.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
