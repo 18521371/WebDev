@@ -1,0 +1,92 @@
+.body
+{
+  height: 80%;
+}
+
+.header
+{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: linear-gradient(to bottom right,rgb(7, 7, 204), rgb(122, 0, 122), rgb(255, 0, 0));
+}
+
+#body1,#body0
+{
+  border: 2px solid white;
+  text-align: center;
+}
+
+#body2
+{
+  border: 2px solid white;
+  text-align: center;
+}
+
+#playzone
+{
+  margin: auto;
+  width: 70%;
+  padding: 7%;
+  height: 86%;
+  border-radius: 5%;
+  background-image: linear-gradient(to bottom right,rgb(7, 7, 204), rgb(122, 0, 122), rgb(255, 0, 0));
+
+}
+
+#playzoneinside
+{
+  height: 100%;
+  width: 100%;
+  padding: 1%;
+}
+
+.card1
+{
+  height: 100%;
+  width: 100%;
+  background-image: url("../Image/question-mark-vector-icon.jpg");
+  background-size: cover;
+  border: 2px solid blue;
+  border-radius: 5%;
+}
+
+.rowgame
+{
+  height: 25%;
+}
+
+#progressbar
+{
+  height: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  width: 88%;
+}
+
+#footer
+{
+  margin-top: 2%;
+  color: white;
+}
+
+.footer
+{
+  background-image: linear-gradient(to bottom right,rgb(7, 7, 204), rgb(122, 0, 122), rgb(255, 0, 0));
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 7%;
+}
+
+.return
+{
+  background-image: linear-gradient(to bottom right,rgb(7, 7, 204), rgb(122, 0, 122), rgb(255, 0, 0));
+  border-radius: 5px;
+}
+
+.timing
+{
+  background-image: linear-gradient(to bottom right,rgb(7, 7, 204), rgb(122, 0, 122), rgb(255, 0, 0));
+  color: white;
+  font-weight: 600;
+}
